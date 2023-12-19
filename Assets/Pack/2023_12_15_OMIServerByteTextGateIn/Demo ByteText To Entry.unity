@@ -172,7 +172,19 @@ MonoBehaviour:
   m_timeBetweenUnityCheck: 0.05
   m_messageReceived:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1818126926}
+        m_TargetAssemblyTypeName: OMISRecoverBytesDebugMono, Assembly-CSharp
+        m_MethodName: PushIn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_threadPriority: 2
   m_lastReceived: 
   m_hasBeenKilled: 0
@@ -985,6 +997,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e831119fb6fa2c4b9202d75feafdecd, type: 3}
+--- !u!114 &860672914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2212132007204946165, guid: 7e831119fb6fa2c4b9202d75feafdecd,
+    type: 3}
+  m_PrefabInstance: {fileID: 860672913}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f78f5a60c8cfc47b57ae956a9e7211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &971012112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,6 +1334,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &1267130390 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6291947483829655022, guid: 7e831119fb6fa2c4b9202d75feafdecd,
+    type: 3}
+  m_PrefabInstance: {fileID: 860672913}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd7400f5f212ca4f972b11bd0cd2f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1302594370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1471,130 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_lastIndexReceived: 0
   m_lastIndexString: 
+--- !u!1 &1818126925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818126927}
+  - component: {fileID: 1818126926}
+  m_Layer: 0
+  m_Name: Convert Received Byte
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1818126926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818126925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d87c562f42e669946bd9efa1787c988e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onConvertedBytesObject:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 860672914}
+        m_TargetAssemblyTypeName: DefaultGivenObjectAsActionsOnRegisters, Assembly-CSharp
+        m_MethodName: ParseToActionObject
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1267130390}
+        m_TargetAssemblyTypeName: Texture2DOMIServerDebugMono, Assembly-CSharp
+        m_MethodName: Refresh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_received:
+    m_fctByte: 0
+    m_b1: 0
+    m_b2: 0
+    m_b3: 0
+    m_b4: 0
+    m_charAsString: 65535
+    m_countBytes: 0
+    m_allFloat: []
+  m_bBytes:
+    m_fctByte: 0
+    m_b1: 0
+    m_b2: 0
+    m_b3: 0
+    m_b4: 0
+    m_charAsString: 65535
+    m_countBytes: 0
+    m_allFloat: []
+    m_countElements: 0
+    m_valueArray: 
+  m_fBytes:
+    m_fctByte: 0
+    m_b1: 0
+    m_b2: 0
+    m_b3: 0
+    m_b4: 0
+    m_charAsString: 65535
+    m_countBytes: 0
+    m_allFloat: []
+    m_countElements: 0
+    m_valueArray: []
+  m_vBytes:
+    m_fctByte: 0
+    m_b1: 0
+    m_b2: 0
+    m_b3: 0
+    m_b4: 0
+    m_charAsString: 1
+    m_countBytes: 0
+    m_allFloat: []
+    m_countElements: 0
+    m_valueArray: []
+  m_qBytes:
+    m_fctByte: 0
+    m_b1: 0
+    m_b2: 0
+    m_b3: 0
+    m_b4: 0
+    m_charAsString: 65535
+    m_countBytes: 0
+    m_allFloat: []
+    m_countElements: 0
+    m_valueArray: []
+--- !u!4 &1818126927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818126925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.38263723, y: 0.2553209, z: -1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1843256892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,6 +1745,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891680750}
   m_CullTransparentMesh: 1
+--- !u!1 &1970233479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970233481}
+  - component: {fileID: 1970233480}
+  m_Layer: 0
+  m_Name: Giti
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1970233480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970233479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66502db6d7d8367418957c0b2de324c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gitFolder:
+  - C:\Life\OMIServer\OMIServer\Assets\Pack\2020_11_29_UDPThreadSender\.git
+  - C:\Life\OMIServer\OMIServer\Assets\Pack\2023_11_24_GitToGiti\.git
+  - C:\Life\OMIServer\OMIServer\Assets\Pack\2023_12_15_OMIServerCoreInterface\.git
+  m_gitiFolder: []
+--- !u!4 &1970233481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970233479}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.38263723, y: 0.2553209, z: -1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2019804719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,3 +1947,5 @@ SceneRoots:
   - {fileID: 1100894859}
   - {fileID: 36483376}
   - {fileID: 497759990}
+  - {fileID: 1970233481}
+  - {fileID: 1818126927}

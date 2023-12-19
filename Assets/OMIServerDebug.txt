@@ -1,40 +1,40 @@
 # Char UTF16
  
 ## Boolean
-Key: å, £
+Key: å, f
   -{"m_charAsIndex":"å","m_stringNameArray":["a","b","x","y","al","ar","ad","au"]}
-  -{"m_charAsIndex":"£","m_stringNameArray":["xrleftjoystickbutton","xrrightjoystickbutton","xrleftprimarybutton","xrrightprimarybutton","xrleftsecondarybutton","xrrightsecondarybutton","xrleftmenubutton","xrrightmenubutton","xrlefttriggertouch","xrrighttriggertouch","xrleftsidethumbtouch","xrrightsidethumbtouch","xrleftjoysticktouch","xrrightjoysticktouch","xrleftprimarytouch","xrrightprimarytouch","xrleftsecondarytouch","xrrightsecondarytouch"]}
+  -{"m_charAsIndex":"f","m_stringNameArray":["b0","b1","b2","b3","b4","b5","b6","b7","b8","b9","b10","b11","b12","b13","b14","b15","b16","b17","b18","b19"]}
  
 ## Float
-Key: £, å
-  -{"m_charAsIndex":"£","m_stringNameArray":["xrjlh","xrjlv","xrjrh","xrjrv","xrtl","xrtr","xrgl","xrgr"]}
+Key: å, f
   -{"m_charAsIndex":"å","m_stringNameArray":["jlh","jlv","jrh","jrv"]}
+  -{"m_charAsIndex":"f","m_stringNameArray":["f0","f1","f2","f3","f4"]}
  
 ## Vector3
-Key: £, å
-  -{"m_charAsIndex":"£","m_stringNameArray":["xrlefthand","xrrighthand","xreyes","xrlefthandeyes","xrrighthandeyes"]}
+Key: å, f
   -{"m_charAsIndex":"å","m_stringNameArray":["handleftpos","handrightpos"]}
+  -{"m_charAsIndex":"f","m_stringNameArray":["v0","v1","v2","v3","v4"]}
  
 ## Quaternion
-Key: £, å
-  -{"m_charAsIndex":"£","m_stringNameArray":["xrlefthand","xrrighthand","xreyes","xrlefthandeyes","xrrighthandeyes"]}
+Key: å, f
   -{"m_charAsIndex":"å","m_stringNameArray":["handleftpos","handrightpos"]}
+  -{"m_charAsIndex":"f","m_stringNameArray":["q0","q1","q2","q3","q4"]}
  
 # Value
  
 ## Boolean
-Key: a, b, x, y, al, ar, ad, au, xrleftjoystickbutton, xrrightjoystickbutton, xrleftprimarybutton, xrrightprimarybutton, xrleftsecondarybutton, xrrightsecondarybutton, xrleftmenubutton, xrrightmenubutton, xrlefttriggertouch, xrrighttriggertouch, xrleftsidethumbtouch, xrrightsidethumbtouch, xrleftjoysticktouch, xrrightjoysticktouch, xrleftprimarytouch, xrrightprimarytouch, xrleftsecondarytouch, xrrightsecondarytouch, left_primatry, left_secondary, left_jooystick, left_istrackedhand, left_istrackedcontroller, right_primatry, right_secondary, right_jooystick, right_istrackedhand, right_istrackedcontroller
-False, True, True, True, False, True, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False
+Key: a, b, x, y, al, ar, ad, au, left_primatry, left_secondary, left_jooystick, left_istrackedhand, left_istrackedcontroller, right_primatry, right_secondary, right_jooystick, right_istrackedhand, right_istrackedcontroller, b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19
+False, True, True, True, False, True, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False
  
 ## Float
-Key: xrjlh, xrjlv, xrjrh, xrjrv, xrtl, xrtr, xrgl, xrgr, left_grap, left_trigger, left_horizontal, left_vertical, right_grap, right_trigger, right_horizontal, right_vertical, jlh, jlv, jrh, jrv
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 23, 8, 5
+Key: left_grap, left_trigger, left_horizontal, left_vertical, right_grap, right_trigger, right_horizontal, right_vertical, jlh, jlv, jrh, jrv, f0, f1, f2, f3, f4
+0, 0, 0, 0, 0, 0, 0, 0, -1, 23, 8, 5, 0, 0, 0, 0, 0
  
 ## Vector3
-Key: xrlefthand, xrrighthand, xreyes, xrlefthandeyes, xrrighthandeyes, left_position, right_position, handleftpos, handrightpos
-(0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.46, -1.50), (-0.73, 0.00, -0.50), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00)
+Key: left_position, right_position, handleftpos, handrightpos, v0, v1, v2, v3, v4
+(0.00, 0.46, -1.50), (-0.73, 0.00, -0.50), (52.00, 45.00, 99.00), (6.00, 2.00, 5.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00)
  
 ## Quaternion
-Key: xrlefthand, xrrighthand, xreyes, xrlefthandeyes, xrrighthandeyes, left_position, right_position, handleftpos, handrightpos
-(0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 0.00000), (0.00000, 0.00000, 0.00000, 0.00000)
+Key: left_position, right_position, handleftpos, handrightpos, q0, q1, q2, q3, q4
+(0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 0.00000), (0.00000, 0.00000, 0.00000, 0.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000)
  

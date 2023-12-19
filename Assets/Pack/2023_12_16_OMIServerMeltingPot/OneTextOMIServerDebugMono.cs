@@ -59,6 +59,7 @@ public class OneTextOMIServerDebugMono : MonoBehaviour
 
     private void DisplayDico(StringBuilder sb, OMIServerPrimitiveType type)
     {
+
         sb.AppendLine("Key: " + string.Join(", ", m_charRegister.R.GetAllCharKeys(type)));
         foreach (var item in m_charRegister.R.GetAll(type))
         {
@@ -71,8 +72,8 @@ public class OneTextOMIServerDebugMono : MonoBehaviour
         
         switch (type)
         {
-            case OMIServerPrimitiveType.Boolean:sb.AppendLine(string.Join(", ",
-                m_registersBFVQ.R.GetAllBooleanValue().Select(k=>k.ToString()) ));
+            case OMIServerPrimitiveType.Boolean:
+                sb.AppendLine(string.Join(", ",m_registersBFVQ.R.GetAllBooleanValue().Select(k=>k.ToString()) ));
                 break;
             case OMIServerPrimitiveType.Float:
                 sb.AppendLine(string.Join(", ",m_registersBFVQ.R.GetAllFloatValue().Select(k => k.ToString())));

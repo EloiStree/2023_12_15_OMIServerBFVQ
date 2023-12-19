@@ -21,7 +21,48 @@ public class DefaultGivenObjectAsActionsOnRegisters : MonoBehaviour
 
     public void ParseToActionObject(object givenObject)
     {
-        if (givenObject is NamedBooleanValue)
+
+
+
+
+
+         if (givenObject is I_CharUTFToNameDefaultBool)
+        {
+            ParseToAction((I_CharUTFToNameDefaultBool)givenObject);
+        }
+        else if (givenObject is I_CharUTFToNameDefaultFloat)
+        {
+            ParseToAction((I_CharUTFToNameDefaultFloat)givenObject);
+        }
+        else if (givenObject is I_CharUTFToNameDefaultVector3)
+        {
+            ParseToAction((I_CharUTFToNameDefaultVector3)givenObject);
+        }
+        else if (givenObject is I_CharUTFToNameDefaultQuaternion)
+        {
+            ParseToAction((I_CharUTFToNameDefaultQuaternion)givenObject);
+        }
+
+
+        else if (givenObject is I_CharUTFToValueFloat)
+        {
+            ParseToAction((I_CharUTFToValueFloat)givenObject);
+        }
+        else if (givenObject is I_CharUTFToValueVector3)
+        {
+            ParseToAction((I_CharUTFToValueVector3)givenObject);
+        }
+        else if (givenObject is I_CharUTFToValueQuaternion)
+        {
+            ParseToAction((I_CharUTFToValueQuaternion)givenObject);
+        }
+        else if (givenObject is I_CharUTFToValueBoolean)
+        {
+            ParseToAction((I_CharUTFToValueBoolean)givenObject);
+        }
+
+
+        else if (givenObject is NamedBooleanValue)
         {
             ParseToAction((NamedBooleanValue)givenObject);
         }
@@ -116,12 +157,14 @@ public class DefaultGivenObjectAsActionsOnRegisters : MonoBehaviour
         }
 
 
+
         else
         {
 
             Debug.Log("Not take in charge:" + givenObject);
         }
     }
+
 
     private void ParseToAction(NamedBooleansChangeRequest givenObject)
     {
@@ -219,6 +262,110 @@ public class DefaultGivenObjectAsActionsOnRegisters : MonoBehaviour
         m_charRegister.R.SetOrAdd(OMIServerPrimitiveType.Boolean, givenObject.GetWithoutDefaultValue());
         for (int i = 0; i < givenObject.m_stringNameArray.Length; i++)
             m_registersBFVQ.R.SetIfNotExisting(givenObject.m_stringNameArray[i], givenObject.m_defaultValue);
+    }
+
+
+
+    private void ParseToAction(I_CharUTFToValueBoolean givenObject)
+    {
+        
+        givenObject.GetChatUniqueId(out char c);
+        m_charRegister.R.Get(c, OMIServerPrimitiveType.Boolean, out bool found, out CharUTFToNamedIndexed utfList);
+
+        if (found)
+        {
+            int i = 0;
+            foreach (var item in givenObject.GetValueAsArray())
+            {
+                if (i < utfList.GetLenght())
+                    m_registersBFVQ.R.SetOrAdd(utfList.GetFromIndex(i), item);
+                i++;
+            }
+        }
+        
+    }
+
+    private void ParseToAction(I_CharUTFToValueQuaternion givenObject)
+    {
+        givenObject.GetChatUniqueId(out char c);
+        m_charRegister.R.Get(c, OMIServerPrimitiveType.Quaternion, out bool found, out CharUTFToNamedIndexed utfList);
+        if (found)
+        {
+            int i = 0;
+            foreach (var item in givenObject.GetValueAsArray())
+            {
+                if (i < utfList.GetLenght())
+                    m_registersBFVQ.R.SetOrAdd(utfList.GetFromIndex(i), item);
+                i++;
+            }
+        }
+    }
+
+    private void ParseToAction(I_CharUTFToValueVector3 givenObject)
+    {
+        givenObject.GetChatUniqueId(out char c);
+        m_charRegister.R.Get(c, OMIServerPrimitiveType.Vector3, out bool found, out CharUTFToNamedIndexed utfList);
+        if (found)
+        {
+            int i = 0;
+            foreach (var item in givenObject.GetValueAsArray())
+            {
+                if(i< utfList.GetLenght())
+                    m_registersBFVQ.R.SetOrAdd(utfList.GetFromIndex(i), item);
+                i++;
+            }
+        }
+    }
+
+    private void ParseToAction(I_CharUTFToValueFloat givenObject)
+    {
+        givenObject.GetChatUniqueId(out char c);
+        m_charRegister.R.Get(c, OMIServerPrimitiveType.Float, out bool found, out CharUTFToNamedIndexed utfList);
+        if (found)
+        {
+            int i = 0;
+            foreach (var item in givenObject.GetValueAsArray())
+            {
+                if (i < utfList.GetLenght())
+                    m_registersBFVQ.R.SetOrAdd(utfList.GetFromIndex(i), item);
+                i++;
+            }
+        }
+
+    }
+
+    private void ParseToAction(I_CharUTFToNameDefaultFloat givenObject)
+    {
+        m_charRegister.R.SetOrAdd(givenObject);
+        foreach (var item in givenObject.GetValueAsArray())
+        {
+            m_registersBFVQ.R.SetIfNotExisting(item, givenObject.GetDefaultValue());
+        }
+    }
+    private void ParseToAction(I_CharUTFToNameDefaultBool givenObject)
+    {
+        m_charRegister.R.SetOrAdd(givenObject);
+        foreach (var item in givenObject.GetValueAsArray())
+        {
+            m_registersBFVQ.R.SetIfNotExisting(item, givenObject.GetDefaultValue());
+        }
+
+    }
+    private void ParseToAction(I_CharUTFToNameDefaultVector3 givenObject)
+    {
+        m_charRegister.R.SetOrAdd(givenObject);
+        foreach (var item in givenObject.GetValueAsArray())
+        {
+            m_registersBFVQ.R.SetIfNotExisting(item, givenObject.GetDefaultValue());
+        }
+    }
+    private void ParseToAction(I_CharUTFToNameDefaultQuaternion givenObject)
+    {
+        m_charRegister.R.SetOrAdd(givenObject);
+        foreach (var item in givenObject.GetValueAsArray())
+        {
+            m_registersBFVQ.R.SetIfNotExisting(item, givenObject.GetDefaultValue());
+        }
     }
 
     private void ParseToAction(SetNamedQuaternionValue value)

@@ -206,7 +206,7 @@ public class ConvertTextToNamedArraysMono : MonoBehaviour
             }
             CharUTFToNamedIndexedBool toPush = new CharUTFToNamedIndexedBool();
             toPush.m_defaultValue = defaultValue;
-            toPush.m_charAsIndex = "" + CharUTF;
+            toPush.m_charAsIndex = CharUTF;
             toPush.m_stringNameArray = names.ToArray();
             m_onPushObjectEvent.Invoke(toPush);
             PushDebug(JsonUtility.ToJson(toPush));
@@ -224,7 +224,7 @@ public class ConvertTextToNamedArraysMono : MonoBehaviour
                 }
             }
             CharUTFToBoolArray toPush = new CharUTFToBoolArray();
-            toPush.m_charAsIndex = "" + CharUTF;
+            toPush.m_charAsIndex = CharUTF;
             toPush.m_stringNameValueArray = values.ToArray();
             m_onPushObjectEvent.Invoke(toPush);
             PushDebug(JsonUtility.ToJson(toPush));
@@ -269,7 +269,7 @@ public class ConvertTextToNamedArraysMono : MonoBehaviour
             }
             CharUTFToNamedIndexedFloat toPush = new CharUTFToNamedIndexedFloat();
             toPush.m_defaultValue = defaultValue;
-            toPush.m_charAsIndex = "" + CharUTF;
+            toPush.m_charAsIndex = CharUTF;
             toPush.m_stringNameArray = names.ToArray();
             m_onPushObjectEvent.Invoke(toPush);
             PushDebug(JsonUtility.ToJson(toPush));
@@ -289,7 +289,7 @@ public class ConvertTextToNamedArraysMono : MonoBehaviour
                 }
             }
             CharUTFToFloatArray toPush = new CharUTFToFloatArray();
-            toPush.m_charAsIndex = "" + CharUTF;
+            toPush.m_charAsIndex =  CharUTF;
             toPush.m_stringNameValueArray = values.ToArray();
             m_onPushObjectEvent.Invoke(toPush);
             PushDebug(JsonUtility.ToJson(toPush));
@@ -316,7 +316,7 @@ public class ConvertTextToNamedArraysMono : MonoBehaviour
             }
             CharUTFToNamedIndexedQuaternion toPush = new CharUTFToNamedIndexedQuaternion();
             toPush.m_defaultValue = defaultValue;
-            toPush.m_charAsIndex = "" + CharUTF;
+            toPush.m_charAsIndex =  CharUTF;
             toPush.m_stringNameArray = names.ToArray();
             m_onPushObjectEvent.Invoke(toPush);
             PushDebug(JsonUtility.ToJson(toPush));
@@ -336,7 +336,7 @@ public class ConvertTextToNamedArraysMono : MonoBehaviour
                 }
             }
             CharUTFToQuaternionArray toPush = new CharUTFToQuaternionArray();
-            toPush.m_charAsIndex = "" + CharUTF;
+            toPush.m_charAsIndex =  CharUTF;
             toPush.m_stringNameValueArray = values.ToArray();
             m_onPushObjectEvent.Invoke(toPush);
             PushDebug(JsonUtility.ToJson(toPush));
@@ -365,7 +365,7 @@ public class ConvertTextToNamedArraysMono : MonoBehaviour
             }
             CharUTFToNamedIndexedVector3 toPush = new CharUTFToNamedIndexedVector3();
             toPush.m_defaultValue = defaultValue;
-            toPush.m_charAsIndex = "" + CharUTF;
+            toPush.m_charAsIndex =  CharUTF;
             toPush.m_stringNameArray = names.ToArray();
             m_onPushObjectEvent.Invoke(toPush);
             PushDebug(JsonUtility.ToJson(toPush));
@@ -385,7 +385,7 @@ public class ConvertTextToNamedArraysMono : MonoBehaviour
                 }
             }
             CharUTFToVector3Array toPush = new CharUTFToVector3Array();
-            toPush.m_charAsIndex = "" + CharUTF;
+            toPush.m_charAsIndex =  CharUTF;
             toPush.m_stringNameValueArray = values.ToArray();
             m_onPushObjectEvent.Invoke(toPush);
             PushDebug(JsonUtility.ToJson(toPush));

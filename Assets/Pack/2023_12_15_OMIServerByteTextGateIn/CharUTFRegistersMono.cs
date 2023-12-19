@@ -14,10 +14,10 @@ public class CharUTFRegistersMono : MonoBehaviour
 public class CharUTFRegistersBFVQ 
 {
 
-    public Dictionary<string, CharUTFToNamedIndexed> m_charToBooleanArray = new Dictionary<string, CharUTFToNamedIndexed>();
-    public Dictionary<string, CharUTFToNamedIndexed> m_charToFloatArray = new Dictionary<string, CharUTFToNamedIndexed>();
-    public Dictionary<string, CharUTFToNamedIndexed> m_charToVectorArray = new Dictionary<string, CharUTFToNamedIndexed>();
-    public Dictionary<string, CharUTFToNamedIndexed> m_charToQuaternionArray = new Dictionary<string, CharUTFToNamedIndexed>();
+    public Dictionary<char, CharUTFToNamedIndexed> m_charToBooleanArray = new Dictionary<char, CharUTFToNamedIndexed>();
+    public Dictionary<char, CharUTFToNamedIndexed> m_charToFloatArray = new Dictionary<char, CharUTFToNamedIndexed>();
+    public Dictionary<char, CharUTFToNamedIndexed> m_charToVectorArray = new Dictionary<char, CharUTFToNamedIndexed>();
+    public Dictionary<char, CharUTFToNamedIndexed> m_charToQuaternionArray = new Dictionary<char, CharUTFToNamedIndexed>();
 
 
     public IEnumerable<CharUTFToNamedIndexed> GetAll(OMIServerPrimitiveType primitiveType)
@@ -32,7 +32,7 @@ public class CharUTFRegistersBFVQ
                 return null;
         }
     }
-    public IEnumerable<string> GetAllCharKeys(OMIServerPrimitiveType primitiveType)
+    public IEnumerable<char> GetAllCharKeys(OMIServerPrimitiveType primitiveType)
     {
         switch (primitiveType)
         {
@@ -45,6 +45,17 @@ public class CharUTFRegistersBFVQ
         }
     }
 
+    public void SetOrAdd(I_CharUTFToNameDefaultBool given) =>
+        SetOrAdd(m_charToBooleanArray, new CharUTFToNamedIndexed(given.GetChatUniqueId(), given.GetValueAsArray()));
+    public void SetOrAdd(I_CharUTFToNameDefaultFloat given) =>
+            SetOrAdd(m_charToFloatArray, new CharUTFToNamedIndexed(given.GetChatUniqueId(), given.GetValueAsArray()));
+    public void SetOrAdd(I_CharUTFToNameDefaultVector3 given) =>
+            SetOrAdd(m_charToVectorArray, new CharUTFToNamedIndexed(given.GetChatUniqueId(), given.GetValueAsArray()));
+    public void SetOrAdd(I_CharUTFToNameDefaultQuaternion given) =>
+            SetOrAdd(m_charToQuaternionArray, new CharUTFToNamedIndexed(given.GetChatUniqueId(), given.GetValueAsArray()));
+
+
+
     public void SetOrAdd(OMIServerPrimitiveType primitiveType, CharUTFToNamedIndexed namedIndex) {
         if (primitiveType == OMIServerPrimitiveType.Boolean)
             SetOrAdd(m_charToBooleanArray, namedIndex);
@@ -56,13 +67,14 @@ public class CharUTFRegistersBFVQ
             SetOrAdd(m_charToQuaternionArray, namedIndex);
     }
 
-    private void SetOrAdd(Dictionary<string, CharUTFToNamedIndexed> dictionnary, CharUTFToNamedIndexed namedIndex)
+    private void SetOrAdd(Dictionary<char, CharUTFToNamedIndexed> dictionnary, CharUTFToNamedIndexed namedIndex)
     {
-        if (!dictionnary.ContainsKey(namedIndex.m_charAsIndex))
-        { dictionnary.Add(namedIndex.m_charAsIndex, namedIndex); }
-        else { dictionnary[namedIndex.m_charAsIndex] = namedIndex; }
+        char c = namedIndex.m_charAsIndex;
+        if (!dictionnary.ContainsKey(c))
+        { dictionnary.Add(c, namedIndex); }
+        else { dictionnary[c] = namedIndex; }
     }
-    private void Get(string lookingFor, Dictionary<string, CharUTFToNamedIndexed> dictionnary,out bool found, out CharUTFToNamedIndexed namedIndex)
+    private void Get(char lookingFor, Dictionary<char, CharUTFToNamedIndexed> dictionnary,out bool found, out CharUTFToNamedIndexed namedIndex)
     {
         found = dictionnary.ContainsKey(lookingFor);
         if (found)
@@ -71,7 +83,7 @@ public class CharUTFRegistersBFVQ
         
     }
 
-    public void Get(string lookingFor,  OMIServerPrimitiveType primitiveType,out bool found, out CharUTFToNamedIndexed namedIndex)
+    public void Get(char lookingFor,  OMIServerPrimitiveType primitiveType,out bool found, out CharUTFToNamedIndexed namedIndex)
     {
         if (primitiveType == OMIServerPrimitiveType.Boolean) {
 
