@@ -1,0 +1,40 @@
+# Char UTF16
+ 
+## Boolean
+Key: å, £
+  -{"m_charAsIndex":"å","m_stringNameArray":["a","b","x","y","al","ar","ad","au"]}
+  -{"m_charAsIndex":"£","m_stringNameArray":["xrleftjoystickbutton","xrrightjoystickbutton","xrleftprimarybutton","xrrightprimarybutton","xrleftsecondarybutton","xrrightsecondarybutton","xrleftmenubutton","xrrightmenubutton","xrlefttriggertouch","xrrighttriggertouch","xrleftsidethumbtouch","xrrightsidethumbtouch","xrleftjoysticktouch","xrrightjoysticktouch","xrleftprimarytouch","xrrightprimarytouch","xrleftsecondarytouch","xrrightsecondarytouch"]}
+ 
+## Float
+Key: £, å
+  -{"m_charAsIndex":"£","m_stringNameArray":["xrjlh","xrjlv","xrjrh","xrjrv","xrtl","xrtr","xrgl","xrgr"]}
+  -{"m_charAsIndex":"å","m_stringNameArray":["jlh","jlv","jrh","jrv"]}
+ 
+## Vector3
+Key: £, å
+  -{"m_charAsIndex":"£","m_stringNameArray":["xrlefthand","xrrighthand","xreyes","xrlefthandeyes","xrrighthandeyes"]}
+  -{"m_charAsIndex":"å","m_stringNameArray":["handleftpos","handrightpos"]}
+ 
+## Quaternion
+Key: £, å
+  -{"m_charAsIndex":"£","m_stringNameArray":["xrlefthand","xrrighthand","xreyes","xrlefthandeyes","xrrighthandeyes"]}
+  -{"m_charAsIndex":"å","m_stringNameArray":["handleftpos","handrightpos"]}
+ 
+# Value
+ 
+## Boolean
+Key: a, b, x, y, al, ar, ad, au, xrleftjoystickbutton, xrrightjoystickbutton, xrleftprimarybutton, xrrightprimarybutton, xrleftsecondarybutton, xrrightsecondarybutton, xrleftmenubutton, xrrightmenubutton, xrlefttriggertouch, xrrighttriggertouch, xrleftsidethumbtouch, xrrightsidethumbtouch, xrleftjoysticktouch, xrrightjoysticktouch, xrleftprimarytouch, xrrightprimarytouch, xrleftsecondarytouch, xrrightsecondarytouch, left_primatry, left_secondary, left_jooystick, left_istrackedhand, left_istrackedcontroller, right_primatry, right_secondary, right_jooystick, right_istrackedhand, right_istrackedcontroller
+False, True, True, True, False, True, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False
+ 
+## Float
+Key: xrjlh, xrjlv, xrjrh, xrjrv, xrtl, xrtr, xrgl, xrgr, left_grap, left_trigger, left_horizontal, left_vertical, right_grap, right_trigger, right_horizontal, right_vertical, jlh, jlv, jrh, jrv
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 23, 8, 5
+ 
+## Vector3
+Key: xrlefthand, xrrighthand, xreyes, xrlefthandeyes, xrrighthandeyes, left_position, right_position, handleftpos, handrightpos
+(0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.46, -1.50), (-0.73, 0.00, -0.50), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00)
+ 
+## Quaternion
+Key: xrlefthand, xrrighthand, xreyes, xrlefthandeyes, xrrighthandeyes, left_position, right_position, handleftpos, handrightpos
+(0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 0.00000), (0.00000, 0.00000, 0.00000, 0.00000)
+ 
