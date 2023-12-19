@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.eloistree.omiservercore",                              
+  "displayName": "OMI Server Core",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "2023_12_15_OMIServerCoreInterface",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2023_12_15_OMIServerBFVQ.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 

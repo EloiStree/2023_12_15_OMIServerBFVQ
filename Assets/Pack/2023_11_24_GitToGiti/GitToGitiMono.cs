@@ -40,4 +40,57 @@ public class GitToGitiMono : MonoBehaviour
 
 
     }
+
+
+    [ContextMenu("Generate Url Backup For All Git")]
+    public void GenerateUrlBackupForAll() {
+
+        foreach (var path in m_gitFolder)
+        {
+            if (Directory.Exists(path))
+            {
+
+                string config =Path.Combine( path , "config");
+                GetUrl(config, out string[] urls);
+                CreateUrlFile(path, urls);
+            }
+        }
+        foreach (var path in m_gitiFolder)
+        {
+            if (Directory.Exists(path)) { 
+
+                string config = Path.Combine(path , "config");
+                //Debug.Log(config);
+                GetUrl(config, out string[] urls);
+                //Debug.Log(string.Join("\n",urls));
+                CreateUrlFile(path, urls);
+            }
+        }
+
+
+    }
+
+    private void CreateUrlFile(string path, string[] urls)
+    {
+        for (int i = 0; i < urls.Length; i++)
+        {
+            string config =urls.Length==1 ? Path.Combine(path, "../GitURL.url") : Path.Combine(path, "../GitURL" + i + ".url");
+            File.WriteAllText(config, "[InternetShortcut]\nURL = "+urls[i]+"\n"); 
+        }
+    }
+
+    private void GetUrl(string config, out string[] urls)
+    {
+        string t = File.ReadAllText(config);
+        List<string> l = new List<string>();
+        foreach (var line in t.Split("\n"))
+        {
+            int i = line.ToLower().IndexOf("url =");
+            if (i > -1) {
+                //Debug.Log("||"+line);
+                l.Add( (line.Substring(i + 5).Trim()));
+            }
+        }
+        urls = l.ToArray();
+    }
 }
