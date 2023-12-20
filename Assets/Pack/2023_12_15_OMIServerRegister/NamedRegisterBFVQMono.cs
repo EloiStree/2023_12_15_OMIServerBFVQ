@@ -48,7 +48,6 @@ public class NamedRegisterBFVQ
             case OMIServerPrimitiveType.Quaternion: return m_registerQuaternion.m_keys.ToArray();
             default:
                 return new string[0];
-                break;
         }
     }
 

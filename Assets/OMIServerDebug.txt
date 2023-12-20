@@ -1,40 +1,41 @@
 # Char UTF16
  
 ## Boolean
-Key: å, f
-  -{"m_charAsIndex":"å","m_stringNameArray":["a","b","x","y","al","ar","ad","au"]}
-  -{"m_charAsIndex":"f","m_stringNameArray":["b0","b1","b2","b3","b4","b5","b6","b7","b8","b9","b10","b11","b12","b13","b14","b15","b16","b17","b18","b19"]}
+Key: å
+  -{"m_charAsIndex":229,"m_stringNameArray":["a","b","x","y","al","ar","ad","au"]}
  
 ## Float
-Key: å, f
-  -{"m_charAsIndex":"å","m_stringNameArray":["jlh","jlv","jrh","jrv"]}
-  -{"m_charAsIndex":"f","m_stringNameArray":["f0","f1","f2","f3","f4"]}
+Key: å
+  -{"m_charAsIndex":229,"m_stringNameArray":["jlh","jlv","jrh","jrv"]}
  
 ## Vector3
-Key: å, f
-  -{"m_charAsIndex":"å","m_stringNameArray":["handleftpos","handrightpos"]}
-  -{"m_charAsIndex":"f","m_stringNameArray":["v0","v1","v2","v3","v4"]}
+Key: å, h, j, m
+  -{"m_charAsIndex":229,"m_stringNameArray":["handleftpos","handrightpos"]}
+  -{"m_charAsIndex":104,"m_stringNameArray":["lefthandroot","lefthandpinkytipbone","lefthandpinkyneartipbone","lefthandpinkynearrootbone","lefthandpinkyrootbone","lefthandringtipbone","lefthandringneartipbone","lefthandringnearrootbone","lefthandringrootbone","lefthandmiddletipbone","lefthandmiddleneartipbone","lefthandmiddlenearrootbone","lefthandmiddlerootbone","lefthandindextipbone","lefthandindexneartipbone","lefthandindexnearrootbone","lefthandindexrootbone","lefthandthumbtipbone","lefthandthumbneartipbone","lefthandthumbnearrootbone","lefthandthumbrootbone","righthandroot","righthandpinkytipbone","righthandpinkyneartipbone","righthandpinkynearrootbone","righthandpinkyrootbone","righthandringtipbone","righthandringneartipbone","righthandringnearrootbone","righthandringrootbone","righthandmiddletipbone","righthandmiddleneartipbone","righthandmiddlenearrootbone","righthandmiddlerootbone","righthandindextipbone","righthandindexneartipbone","righthandindexnearrootbone","righthandindexrootbone","righthandthumbtipbone","righthandthumbneartipbone","righthandthumbnearrootbone","righthandthumbrootbone"]}
+  -{"m_charAsIndex":106,"m_stringNameArray":["xrcamera","xrleftcontroller","xrrightcontroller","xrlefthand","xrrighthand"]}
+  -{"m_charAsIndex":109,"m_stringNameArray":["lefthandroot","lefthandpinkytipbone","lefthandpinkyneartipbone","lefthandpinkynearrootbone","lefthandpinkyrootbone","lefthandringtipbone","lefthandringneartipbone","lefthandringnearrootbone","lefthandringrootbone","lefthandmiddletipbone","lefthandmiddleneartipbone","lefthandmiddlenearrootbone","lefthandmiddlerootbone","lefthandindextipbone","lefthandindexneartipbone","lefthandindexnearrootbone","lefthandindexrootbone","lefthandthumbtipbone","lefthandthumbneartipbone","lefthandthumbnearrootbone","lefthandthumbrootbone","righthandroot","righthandpinkytipbone","righthandpinkyneartipbone","righthandpinkynearrootbone","righthandpinkyrootbone","righthandringtipbone","righthandringneartipbone","righthandringnearrootbone","righthandringrootbone","righthandmiddletipbone","righthandmiddleneartipbone","righthandmiddlenearrootbone","righthandmiddlerootbone","righthandindextipbone","righthandindexneartipbone","righthandindexnearrootbone","righthandindexrootbone","righthandthumbtipbone","righthandthumbneartipbone","righthandthumbnearrootbone","righthandthumbrootbone"]}
  
 ## Quaternion
-Key: å, f
-  -{"m_charAsIndex":"å","m_stringNameArray":["handleftpos","handrightpos"]}
-  -{"m_charAsIndex":"f","m_stringNameArray":["q0","q1","q2","q3","q4"]}
+Key: å, h, j
+  -{"m_charAsIndex":229,"m_stringNameArray":["handleftpos","handrightpos"]}
+  -{"m_charAsIndex":104,"m_stringNameArray":["lefthandroot","lefthandpinkytipbone","lefthandpinkyneartipbone","lefthandpinkynearrootbone","lefthandpinkyrootbone","lefthandringtipbone","lefthandringneartipbone","lefthandringnearrootbone","lefthandringrootbone","lefthandmiddletipbone","lefthandmiddleneartipbone","lefthandmiddlenearrootbone","lefthandmiddlerootbone","lefthandindextipbone","lefthandindexneartipbone","lefthandindexnearrootbone","lefthandindexrootbone","lefthandthumbtipbone","lefthandthumbneartipbone","lefthandthumbnearrootbone","lefthandthumbrootbone","righthandroot","righthandpinkytipbone","righthandpinkyneartipbone","righthandpinkynearrootbone","righthandpinkyrootbone","righthandringtipbone","righthandringneartipbone","righthandringnearrootbone","righthandringrootbone","righthandmiddletipbone","righthandmiddleneartipbone","righthandmiddlenearrootbone","righthandmiddlerootbone","righthandindextipbone","righthandindexneartipbone","righthandindexnearrootbone","righthandindexrootbone","righthandthumbtipbone","righthandthumbneartipbone","righthandthumbnearrootbone","righthandthumbrootbone"]}
+  -{"m_charAsIndex":106,"m_stringNameArray":["xrcamera","xrleftcontroller","xrrightcontroller","xrlefthand","xrrighthand"]}
  
 # Value
  
 ## Boolean
-Key: a, b, x, y, al, ar, ad, au, left_primatry, left_secondary, left_jooystick, left_istrackedhand, left_istrackedcontroller, right_primatry, right_secondary, right_jooystick, right_istrackedhand, right_istrackedcontroller, b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19
-False, True, True, True, False, True, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False
+Key: a, b, x, y, al, ar, ad, au, left_primatry, left_secondary, left_jooystick, left_istrackedhand, left_istrackedcontroller, right_primatry, right_secondary, right_jooystick, right_istrackedhand, right_istrackedcontroller, 🀲, , buttondemo
+False, False, True, True, False, True, False, True, False, False, False, False, False, False, False, False, False, False, True, False, True
  
 ## Float
-Key: left_grap, left_trigger, left_horizontal, left_vertical, right_grap, right_trigger, right_horizontal, right_vertical, jlh, jlv, jrh, jrv, f0, f1, f2, f3, f4
-0, 0, 0, 0, 0, 0, 0, 0, -1, 23, 8, 5, 0, 0, 0, 0, 0
+Key: left_grap, left_trigger, left_horizontal, left_vertical, right_grap, right_trigger, right_horizontal, right_vertical, jlh, jlv, jrh, jrv, axisdemo
+0, 0, 0, 0, 0, 0, 0, 0, -1, 23, 8, 5, 3
  
 ## Vector3
-Key: left_position, right_position, handleftpos, handrightpos, v0, v1, v2, v3, v4
-(0.00, 0.46, -1.50), (-0.73, 0.00, -0.50), (52.00, 45.00, 99.00), (6.00, 2.00, 5.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00), (0.00, 0.00, 0.00)
+Key: left_position, right_position, handleftpos, handrightpos, vectordemo, lefthandroot, lefthandpinkytipbone, lefthandpinkyneartipbone, lefthandpinkynearrootbone, lefthandpinkyrootbone, lefthandringtipbone, lefthandringneartipbone, lefthandringnearrootbone, lefthandringrootbone, lefthandmiddletipbone, lefthandmiddleneartipbone, lefthandmiddlenearrootbone, lefthandmiddlerootbone, lefthandindextipbone, lefthandindexneartipbone, lefthandindexnearrootbone, lefthandindexrootbone, lefthandthumbtipbone, lefthandthumbneartipbone, lefthandthumbnearrootbone, lefthandthumbrootbone, righthandroot, righthandpinkytipbone, righthandpinkyneartipbone, righthandpinkynearrootbone, righthandpinkyrootbone, righthandringtipbone, righthandringneartipbone, righthandringnearrootbone, righthandringrootbone, righthandmiddletipbone, righthandmiddleneartipbone, righthandmiddlenearrootbone, righthandmiddlerootbone, righthandindextipbone, righthandindexneartipbone, righthandindexnearrootbone, righthandindexrootbone, righthandthumbtipbone, righthandthumbneartipbone, righthandthumbnearrootbone, righthandthumbrootbone, xrcamera, xrleftcontroller, xrrightcontroller, xrlefthand, xrrighthand
+(0.00, 0.46, -1.50), (-0.73, 0.00, -0.50), (52.00, 45.00, 99.00), (6.00, 2.00, 5.00), (-3.00, 1.00, 1.00), (0.00, 0.79, 0.39), (0.02, 0.77, 0.53), (0.00, 0.79, 0.52), (0.00, 0.80, 0.51), (0.00, 0.79, 0.48), (0.05, 0.78, 0.54), (0.03, 0.80, 0.53), (0.02, 0.81, 0.52), (0.01, 0.81, 0.48), (0.06, 0.78, 0.52), (0.06, 0.80, 0.53), (0.04, 0.82, 0.52), (0.03, 0.82, 0.48), (0.08, 0.77, 0.51), (0.08, 0.79, 0.51), (0.07, 0.82, 0.51), (0.05, 0.82, 0.47), (0.08, 0.77, 0.50), (0.07, 0.77, 0.47), (0.06, 0.78, 0.44), (0.04, 0.79, 0.42), (0.40, 0.76, 0.32), (0.45, 0.72, 0.40), (0.47, 0.74, 0.40), (0.48, 0.75, 0.40), (0.47, 0.77, 0.37), (0.45, 0.73, 0.42), (0.47, 0.74, 0.42), (0.48, 0.77, 0.42), (0.46, 0.78, 0.39), (0.45, 0.73, 0.44), (0.46, 0.75, 0.44), (0.46, 0.78, 0.43), (0.44, 0.79, 0.40), (0.45, 0.74, 0.45), (0.45, 0.77, 0.45), (0.44, 0.79, 0.44), (0.42, 0.79, 0.41), (0.42, 0.73, 0.45), (0.40, 0.74, 0.43), (0.40, 0.74, 0.40), (0.40, 0.75, 0.37), (0.05, 1.08, -0.01), (0.05, 1.08, -0.01), (0.05, 1.08, -0.01), (0.05, 1.08, -0.01), (0.05, 1.08, -0.01)
  
 ## Quaternion
-Key: left_position, right_position, handleftpos, handrightpos, q0, q1, q2, q3, q4
-(0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 0.00000), (0.00000, 0.00000, 0.00000, 0.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000)
+Key: left_position, right_position, handleftpos, handrightpos, quaterniondemo, lefthandroot, lefthandpinkytipbone, lefthandpinkyneartipbone, lefthandpinkynearrootbone, lefthandpinkyrootbone, lefthandringtipbone, lefthandringneartipbone, lefthandringnearrootbone, lefthandringrootbone, lefthandmiddletipbone, lefthandmiddleneartipbone, lefthandmiddlenearrootbone, lefthandmiddlerootbone, lefthandindextipbone, lefthandindexneartipbone, lefthandindexnearrootbone, lefthandindexrootbone, lefthandthumbtipbone, lefthandthumbneartipbone, lefthandthumbnearrootbone, lefthandthumbrootbone, righthandroot, righthandpinkytipbone, righthandpinkyneartipbone, righthandpinkynearrootbone, righthandpinkyrootbone, righthandringtipbone, righthandringneartipbone, righthandringnearrootbone, righthandringrootbone, righthandmiddletipbone, righthandmiddleneartipbone, righthandmiddlenearrootbone, righthandmiddlerootbone, righthandindextipbone, righthandindexneartipbone, righthandindexnearrootbone, righthandindexrootbone, righthandthumbtipbone, righthandthumbneartipbone, righthandthumbnearrootbone, righthandthumbrootbone, xrcamera, xrleftcontroller, xrrightcontroller, xrlefthand, xrrighthand
+(0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (52.00000, 45.00000, 99.00000, 45.00000), (0.00000, 0.00000, 0.00000, 1.00000), (-3.00000, 1.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (0.00000, 0.00000, 0.00000, 1.00000), (-0.42846, 0.10292, 0.08766, 0.89339), (-0.42846, 0.10292, 0.08766, 0.89339), (-0.42846, 0.10292, 0.08766, 0.89339), (-0.42846, 0.10292, 0.08766, 0.89339), (-0.42846, 0.10292, 0.08766, 0.89339)
  
